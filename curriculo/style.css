@@ -1,0 +1,143 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        /* Seções */
+        section {
+            padding: 25px 30px;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+        }
+        h2::after {
+            content: "";
+            flex: 1;
+            margin-left: 15px;
+            height: 1px;
+            background: #ddd;
+        }
+        
+        /* Experiência Profissional */
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+        }
+        .job-company {
+            color: #3498db;
+            font-weight: normal;
+        }
+        .job-period {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        .job-description {
+            margin-top: 10px;
+        }
+        
+        /* Educação */
+        .education {
+            margin-bottom: 15px;
+        }
+        .education-degree {
+            font-weight: bold;
+        }
+        .education-institution {
+            display: block;
+            color: #3498db;
+        }
+        .education-period {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        /* Habilidades */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-container .front-end{
+            padding-left: 20px;
+        }
+        .skills-container .back-end{
+            padding-left: 180px;
+        }
+        .skill {
+            background: #ecf0f1;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: none;
+        }
+      
+        .skill img{
+            width :20px;
+            display: inline-flex;
+            border: none;
+        }
+        
+        /* Rodapé */
+        footer {
+            background: #f5f5f5;
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .job-title {
+                flex-direction: column;
+            }
+            .job-period {
+                margin-top: 5px;
+            }
+        }
